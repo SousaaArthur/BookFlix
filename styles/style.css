@@ -13,12 +13,25 @@ body{
 }
 
 #pdf-container {
-    width: 27.3rem;
-    height: 650px; /* Altura do contêiner - ajuste conforme necessário */
+    width: 39.2rem;
+    height: 700px; /* Altura do contêiner - ajuste conforme necessário */
     overflow-y: scroll; /* Adiciona uma barra de rolagem vertical */
 }
 .page-canvas {
     display: block;
     margin: 10px auto;
     border: 1px solid #ccc;
+}
+
+::-webkit-scrollbar {
+  color: #FF314C;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF314C;
+  height: 30px;
 }
