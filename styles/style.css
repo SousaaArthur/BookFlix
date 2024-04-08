@@ -13,8 +13,8 @@ body{
 }
 
 #pdf-container {
-    width: 30rem;
-    height: 700px; /* Altura do contêiner - ajuste conforme necessário */
+    width: 27.3rem;
+    height: 650px; /* Altura do contêiner - ajuste conforme necessário */
     overflow-y: scroll; /* Adiciona uma barra de rolagem vertical */
 }
 .page-canvas {
