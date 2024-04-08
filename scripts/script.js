@@ -4,7 +4,7 @@ const pdfContainer = document.getElementById('pdf-container');
 pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
     for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
         pdf.getPage(pageNum).then(page => {
-            const viewport = page.getViewport({ scale: 1 });
+            const viewport = page.getViewport({ scale: .9 });
             const canvas = document.createElement('canvas');
             const context = canvas.getContext('2d');
 
