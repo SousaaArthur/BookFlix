@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body{
@@ -9,18 +12,109 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #212121;
 }
 
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fafafa;
+  margin-top: 1rem;
+}
+
+.btn-back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  gap: .5rem;
+  color: #fafafa;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.btn-back:hover{
+  color: #FF314C;
+}
+
+.book-title h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF314C;
+  width: 120%;
+}
+
+.btn-read-confirmation{
+  display: flex;
+  margin-right: 1rem;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+  color: #fafafa;
+  background-color: #111111;
+  padding: .7rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btn-read-confirmation:hover{
+  background-color: #b3b3b3;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-page{
+  height: 97%;
+  width: 1rem;
+  width: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.change-page i{
+  font-size: 2rem;
+  color: #0f0f0f;
+}
+
+.control-pdf{
+  height: 97%;
+  width: 1rem;
+  width: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.control-pdf i {
+  font-size: 2rem;
+  color: #0f0f0f;
+}
+
 #pdf-container {
-    width: 35.3rem;
-    height: 700px; /* Altura do contêiner - ajuste conforme necessário */
-    overflow-y: scroll; /* Adiciona uma barra de rolagem vertical */
+  width: 35.3rem;
+  height: 700px;
+  overflow-y: scroll;
 }
 .page-canvas {
-    display: block;
-    margin: 10px auto;
-    border: 1px solid #ccc;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
 }
 
 ::-webkit-scrollbar {

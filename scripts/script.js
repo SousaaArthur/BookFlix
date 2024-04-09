@@ -20,3 +20,5 @@ pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
         });
     }
 });
+
+const btnCheck = document.getElementsByClassName('')

@@ -6,10 +6,55 @@
     <title>BookFlix - Home</title>
     <!-- Carregue os arquivos de PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <!--Icons Fontawesome-->
+    <link rel="stylesheet" href="./libs/fontawesome-free-6.5.1-web/css/all.min.css">
+    <!--Style page-->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div id="pdf-container"></div>
+    <!--<div id="pdf-container"></div>-->
+
+    <nav>
+        <div class="btn-back">
+            <i class="fa-solid fa-chevron-left"></i>
+            <p>Back</p>
+        </div>
+        <div class="book-title">
+            <h1>Harry Potter e a Pedra Filosofal - J.K. Rowling</h1>
+        </div>
+        <div class="btn-read-confirmation">
+            <p>Marca como lido</p>
+            <i class="fa-solid fa-check"></i>
+        </div>
+    </nav>
+    <main>
+        <div class="change-page">
+            <div class="chapter-back">
+                <i class="fa-solid fa-angles-up"></i>
+            </div>
+            <div class="back-page">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="number-pages">
+                <p>1/108</p>
+            </div>
+            <div class="next-page">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="next-chapter">
+                <i class="fa-solid fa-angles-down"></i>
+            </div>
+        </div>
+        <div id="pdf-container"></div>
+        <div class="control-pdf">
+            <div class="increase">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+            <div class="to-decrease">
+                <i class="fa-solid fa-magnifying-glass-minus"></i>
+            </div>
+        </div>
+    </main>
 
     <script src="./scripts/script.js"></script>
 </body>
